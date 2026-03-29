@@ -1,0 +1,82 @@
+/* RESET & BASICS */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background-color: #f4f4f4; color: #333; }
+
+/* EMIRATES THEME COLORS */
+:root {
+    --primary-red: #D71920; /* Emirates Red */
+    --primary-gold: #cfaa60; /* Gold Accent */
+    --dark-bg: #333333;
+    --light-bg: #ffffff;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    background-color: var(--primary-red);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.navbar .logo { color: white; font-size: 24px; font-weight: bold; text-decoration: none; }
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.navbar .nav-links a:hover { color: var(--primary-gold); }
+
+/* CONTAINERS */
+.container { width: 90%; max-width: 1200px; margin: 30px auto; }
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+.btn-primary { background-color: var(--primary-red); color: white; }
+.btn-gold { background-color: var(--primary-gold); color: var(--dark-bg); }
+.btn-danger { background-color: #a00; color: white; }
+.btn:hover { opacity: 0.9; }
+
+/* FORMS */
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; color: #666; }
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* TABLES */
+.table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+.table th { background-color: var(--dark-bg); color: white; padding: 12px; text-align: left; }
+.table td { padding: 12px; border-bottom: 1px solid #ddd; }
+.table tr:hover { background-color: #f1f1f1; }
+
+/* DASHBOARD CARDS */
+.dashboard-grid { display: flex; gap: 20px; }
+.stat-card {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-left: 5px solid var(--primary-gold);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.stat-card h3 { color: var(--primary-red); font-size: 32px; }
